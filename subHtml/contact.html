@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>联系方式 - 我的GitHub主页</title>
+    <link rel="stylesheet" href="style.css"> <!-- 引入通用样式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- 引入Font Awesome图标 -->
+</head>
+<body>
+
+<!-- 头部代码，这里再次强调可以考虑使用包含技术减少重复 -->
+<!-- 头部代码，同前 -->
+
+<main>
+    <section class="contact-section">
+        <div class="container">
+            <h2>联系方式</h2>
+            <p>如果您有任何问题、合作意向或想要讨论技术，请通过以下方式联系我：</p>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i> <!-- 使用Font Awesome图标，确保引入相关库 -->
+                    <a href="mailto:youremail@example.com">youremail@example.com</a>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/yourusername">GitHub: yourusername</a>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/yourlinkedin/">LinkedIn: yourlinkedin</a>
+                </div>
+                <!-- 根据实际情况添加更多联系方式 -->
+            </div>
+            
+            <!-- 如果需要，还可以添加一个表单供用户直接发送消息 -->
+            <form action="message-handler.php" method="POST">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">消息:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">发送消息</button>
+            </form>
+            
+        </div>
+    </section>
+</main>
+
+<!-- 尾部代码，同前 -->
+
+<div class="back-to-home">
+    <a href="../index.html"><i class="fas fa-home"></i> 返回主页</a>
+</div>
+
+</body>
+</html>
