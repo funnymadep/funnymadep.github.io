@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎访问我的主页</title>
+    <title>我的 GitHub 主页</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1170px;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ff6600 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('./picture/showcase.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎访问我的GitHub Pages主页</h1>
-    <p>这是一个简单的示例页面。</p>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">我的</span> GitHub 主页</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">主页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="projects.html">项目</a></li>
+                    <li><a href="contact.html">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>欢迎来到我的个人主页</h1>
+            <p>这里是我的项目展示和个人信息介绍，欢迎各位访问和交流。</p>
+        </div>
+    </section>
+
+    <!-- 在这里添加你的内容 -->
+
+    <footer>
+        <p>版权所有 &copy; 2023 我的 GitHub 主页</p>
+    </footer>
 </body>
 </html>
