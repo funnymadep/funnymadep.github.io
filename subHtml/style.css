@@ -56,3 +56,8 @@ header a:hover {
 .back-to-home a:hover {
     background-color: #555; /* 鼠标悬停时的颜色变化 */
 }
+
+.fancy-text {
+    font-family: 'Georgia', serif;
+    font-size: 18px; /* 可选：调整字体大小 */
+}
