@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>关于我 - 何帅的主页</title>
-    <link rel="stylesheet" href="style.css"> <!-- 引入通用样式 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-<!-- 重复使用的头部部分可以考虑使用服务器端包含或客户端框架（如Vue, React）来避免重复代码，这里为了简化直接复制 -->
-<!-- 头部代码，同上 -->
-
-<main>
-    <section class="about-me">
+    <header>
         <div class="container">
-            <h2>姓名：何帅</h2>
-            <img src="../picture/my.jpg" alt="个人照片" class="profile-pic">
-            <p>特长1:很帅</p>
-            <p>特长2:帅的一塌糊涂</p>
-            <!-- 更多关于你的信息 -->
-            <p class="fancy-text">只有看镜子才能略微养眼</p>
+            <div id="branding">
+                <h1><span class="highlight">何帅的</span> 休闲圣地</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">主页</a></li>
+                    <li class="current"><a href="about.html">关于我</a></li>
+                    <li><a href="projects.html">休闲圣地</a></li>
+                    <li><a href="contact.html">联系方式</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-</main>
+    </header>
 
-<!-- 重复使用的尾部部分 -->
-<!-- 尾部代码，同上 -->
+    <main>
+        <section class="section about-me">
+            <div class="container">
+                <h2>关于我</h2>
+                <img src="../picture/my.jpg" alt="个人照片" class="profile-pic">
+                <p>特长1: 很帅</p>
+                <p>特长2: 帅的一塌糊涂</p>
+                <p class="fancy-text">只有看镜子才能略微养眼</p>
+            </div>
+        </section>
+    </main>
 
-<div class="back-to-home">
-    <a href="../index.html"><i class="fas fa-home"></i> 返回主页</a>
-</div>
-</body>
-
-<footer>
-    <div class="container">
-        <p>版权所有 © 2024 何帅</p>
+    <div class="back-to-home">
+        <a href="../index.html"><i class="fas fa-home"></i> 返回主页</a>
     </div>
-</footer>
 
+    <footer>
+        <div class="container">
+            <p>版权所有 © 2024 何帅</p>
+        </div>
+    </footer>
+</body>
 </html>
